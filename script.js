@@ -29,6 +29,27 @@ renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 2.5;
 document.querySelector(".model").appendChild(renderer.domElement);
 
+//background
+const textureLoader = new THREE.TextureLoader();
+const backgroundTexture = textureLoader.load("./assets/background.png");
+
+const planeGeometry = new THREE.PlaneGeometry(80, 50);
+const planeMaterial = new THREE.MeshBasicMaterial({
+    map: backgroundTexture,
+    side: THREE.DoubleSide,
+});
+
+const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+plane.position.set(0, 0, -5); // Move para trás do modelo
+scene.add(plane);
+
+// teste 
+const spriteMaterial = new THREE.SpriteMaterial({ map: backgroundTexture });
+const sprite = new THREE.Sprite(spriteMaterial);
+sprite.scale.set(5, 5, 1); // Ajuste o tamanho
+sprite.position.set(0, 0, -5); 
+scene.add(sprite);
+
 // Luzes
 const ambientLight = new THREE.AmbientLight(0xffffff, 3);
 scene.add(ambientLight);
