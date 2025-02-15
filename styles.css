@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Neue Haas Grotesk Display PRO";
+    font-family: "Poppins";
 }
 
 html, 
@@ -25,21 +25,26 @@ canvas {
 
 h1  {
     text-align: center;
-    font-size: 10vw;
-    font-weight: 500;
-    line-height: 100%;
+    font-size: 30px;
+    position: relative;
+    top: -90px;
 }
 
 h2  {
-    font-size: 2.5vw;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 50;
     line-height: 100%;
+    position: relative;
+    top: 130px;
+    text-align: center;
 }
 
 p   {
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 100%;
+    position: relative;
+    top: 130px;
 }
 
 .model  {
@@ -62,16 +67,16 @@ section {
 }
 
 .hero h1 {
-    margin-bottom: 0.25em;
+    text-align: center;
 }
 
 .hero p {
-    width: 60%;
+    width: 30cap;
     text-align: center;
 }
 
 .info   {
-    gap: 8em;
+    gap: 10em;
 }
 
 .info .tags {
@@ -81,14 +86,20 @@ section {
 }
 
 .info h2 {
+    background-color: blue;
     width: 75%;
     text-align: center;
 }
 
 .info p {
-    width: 60%;
+    background-color: blue;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     text-align: center;
 }
+
 
 .scan-info {
     position: absolute;

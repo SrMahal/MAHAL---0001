@@ -43,13 +43,6 @@ const plane = new THREE.Mesh(planeGeometry, planeMaterial);
 plane.position.set(0, 0, -5); // Move para trás do modelo
 scene.add(plane);
 
-// teste 
-const spriteMaterial = new THREE.SpriteMaterial({ map: backgroundTexture });
-const sprite = new THREE.Sprite(spriteMaterial);
-sprite.scale.set(5, 5, 1); // Ajuste o tamanho
-sprite.position.set(0, 0, -5); 
-scene.add(sprite);
-
 // Luzes
 const ambientLight = new THREE.AmbientLight(0xffffff, 3);
 scene.add(ambientLight);
@@ -121,9 +114,9 @@ gsap.set(scanContainer, { scale: 0 });
 function playInitialAnimation() {
     if (model) {
         gsap.to(model.scale, {
-            x: 1,
-            y: 1,
-            z: 1,
+            x: 1.8,
+            y: 1.8,
+            z: 1.8,
             duration: 1,
             ease: "power2.out",
         });
@@ -142,9 +135,9 @@ ScrollTrigger.create({
     onEnterBack: () => {
         if (model) {
             gsap.to(model.scale, {
-                x: 1,
-                y: 1,
-                z: 1,
+                x: 1.8,
+                y: 1.8,
+                z: 1.8,
                 duration: 1,
                 ease: "power2.out",
             });
