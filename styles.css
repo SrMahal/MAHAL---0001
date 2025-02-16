@@ -9,6 +9,7 @@ html,
 body    {
     width: 100vw;
     height: 500vh;
+    overflow-x: hidden;
 }
 
 img {
@@ -68,31 +69,40 @@ section {
 
 .hero h1 {
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .hero p {
-    width: 30cap;
+    background-color: aqua;
+    width: 100%;
+    margin: 0px 0px;
     text-align: center;
+    padding-top: 10px;
 }
 
 .info   {
     gap: 10em;
 }
 
-.info .tags {
-    width: 60%;
-    display: flex;
+.info {
+    width: 100%;
     gap: 2em;
+}
+
+.tags{
+    background-color: tomato;
+    display: flex;
+    align-items: center;
 }
 
 .info h2 {
     background-color: blue;
     width: 75%;
     text-align: center;
+    padding: 20px;
 }
 
 .info p {
-    background-color: blue;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
