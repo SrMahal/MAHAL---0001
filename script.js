@@ -40,7 +40,7 @@ const planeMaterial = new THREE.MeshBasicMaterial({
 });
 
 const plane = new THREE.Mesh(planeGeometry, planeMaterial);
-plane.position.set(0, 0, -5); // Move para trás do modelo
+plane.position.set(0, 0, 0); // Move para trás do modelo
 scene.add(plane);
 
 // Luzes

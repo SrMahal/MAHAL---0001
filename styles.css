@@ -58,7 +58,7 @@ p   {
 section {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,41 +68,71 @@ section {
 }
 
 .hero h1 {
+    position: absolute;
     text-align: center;
     padding-bottom: 100px;
+    top: 250px;
+}
+
+.hero h2{
+    position: absolute;
+    top: 650px;    
+    font-size: 28;
 }
 
 .hero p {
-    background-color: aqua;
-    width: 100%;
+    position: absolute;
+    top: 700px; 
+    width: 60%;
+    font-size: 18px;
     margin: 0px 0px;
     text-align: center;
     padding-top: 10px;
 }
 
+@media (max-width: 500px) {
+    .hero h1 {
+        top: 190px;
+    }
+    
+    .hero h2 {
+        font-size: 30px;
+        top: 565px;
+        width: 95%;   
+    }
+
+    .hero p {
+        font-size: 15px;
+        top: 630px; 
+        width: 95%;
+    }
+}
+    
+    
 .info   {
     gap: 10em;
+
 }
 
 .info {
     width: 100%;
-    gap: 2em;
+    gap: 1em;
 }
 
 .tags{
-    background-color: tomato;
     display: flex;
     align-items: center;
 }
 
+
 .info h2 {
-    background-color: blue;
-    width: 75%;
+    width: 75%; /* Espaço do texto */
     text-align: center;
     padding: 20px;
 }
 
 .info p {
+    padding: 20px;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
@@ -142,7 +172,7 @@ section {
     padding: 0.5em 4em;
     color: red;
     border: 1px solid red;
-    border-radius: 2em;
+    border-radius: 1em;
 }
 
 .outro h2   {
