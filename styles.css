@@ -8,7 +8,7 @@
 html, 
 body    {
     width: 100vw;
-    height: 500vh;
+    height: 500dvh;
     overflow-x: hidden;
 }
 
@@ -105,6 +105,24 @@ section {
     .hero p {
         font-size: 15px;
         top: 630px; 
+        width: 95%;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero h1 {
+        top: 180px;
+    }
+    
+    .hero h2 {
+        font-size: 30px;
+        top: 460px;
+        width: 95%;   
+    }
+
+    .hero p {
+        font-size: 15px;
+        top: 530px; 
         width: 95%;
     }
 }
