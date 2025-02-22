@@ -8,8 +8,7 @@
 html, 
 body    {
     width: 100vw;
-    /*height: 500vh;*/
-    height: 100dvh; /* Usa a altura dinâmica da viewport */
+    height: 500vh;
     overflow-x: hidden;
 }
 
