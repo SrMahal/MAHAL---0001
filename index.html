@@ -1,62 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAHAL | #0001</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- Configurações básicas do documento -->
+    <meta charset="UTF-8"> <!-- Define o encoding do documento como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <title>MAHAL | #0001</title> <!-- Título da página -->
+    
+    <!-- Links para folhas de estilo e fontes -->
+    <link rel="stylesheet" href="./styles.css"> <!-- Link para o arquivo CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'> <!-- Link para a fonte Poppins do Google Fonts -->
 </head>
 <body>
+    <!-- Contêiner para o modelo 3D -->
     <div class="model"></div>
 
+    <!-- Seção Hero (Introdução) -->
     <section class="hero">
-        <h1> Marcelo Halker</h1>
-        <h2>Transformando experiências visuais</h2>
+        <h1>Marcelo Halker</h1> <!-- Título principal -->
+        <h2>Transformando experiências visuais</h2> <!-- Subtítulo -->
         <p>
             Sou movido pela criatividade e sempre encontro soluções 
-inovadoras para desafios visuais. Sei trabalhar sob pressão, 
-mas acredito que a qualidade deve guiar a velocidade!
-        </p>
+            inovadoras para desafios visuais. Sei trabalhar sob pressão, 
+            mas acredito que a qualidade deve guiar a velocidade!
+        </p> <!-- Parágrafo de descrição -->
     </section>
-    <section class="info">
 
+    <!-- Seção Info (Vazia por enquanto) -->
+    <section class="info">
+        <!-- Esta seção pode ser preenchida com informações adicionais -->
     </section>
+
+    <!-- Seção Scanner -->
     <section class="scanner">
+        <!-- Informações do produto -->
         <div class="scan-info">
-            <div class="product-id"><h2>#00001</h2></div>
+            <div class="product-id"><h2>#00001</h2></div> <!-- ID do produto -->
             <div class="product-description">
-                <p>www.bymahal.com</p>
+                <p>www.bymahal.com</p> <!-- Descrição do produto -->
             </div>
         </div>
 
+        <!-- Contêiner do scanner -->
         <div class="scan-container"></div>
 
-        <Div class="perfil">
-            <img class="fotoperfil" src="/assets/fotoperfil.png" alt="">
+        <!-- Perfil do usuário -->
+        <div class="perfil">
+            <img class="fotoperfil" src="/assets/fotoperfil.png" alt="Foto de perfil"> <!-- Imagem do perfil -->
             <div class="infoCta">
-                <p>Mahal</p>
-                <button class="buttoncall">Chamar</button>
+                <p>Mahal</p> <!-- Nome do usuário -->
+                <button class="buttoncall">Chamar</button> <!-- Botão de ação -->
             </div>
-            
-        </Div>
-
-        <div class="barcode">
-            <img src="/assets/IMG.png" alt="" />
         </div>
 
+        <!-- Código de barras -->
+        <div class="barcode">
+            <img src="/assets/IMG.png" alt="Código de barras"> <!-- Imagem do código de barras -->
+        </div>
+
+        <!-- Mensagem de compra -->
         <div class="purchased"><p>JAVASCRIPT</p></div>
     </section>
+
+    <!-- Seção Outro (Conclusão) -->
     <section class="outro">
         <h2>
-            Seu site com uma apresentação 3D do seu produto, trazendo uma imerssão ao cliente e credibilidade de compra, enfim esse é apenas um site para eu testar.
-        </h2>
+            Seu site com uma apresentação 3D do seu produto, trazendo uma imersão ao cliente e credibilidade de compra, enfim esse é apenas um site para eu testar.
+        </h2> <!-- Mensagem final -->
     </section>
-    <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> 
-    <script src="./script.js"></script>
+
+    <!-- Scripts externos -->
+    <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script> <!-- Biblioteca Lenis para rolagem suave -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> <!-- Biblioteca Three.js para renderização 3D -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script> <!-- Loader GLTF para carregar modelos 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> <!-- Biblioteca GSAP para animações -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> <!-- Plugin ScrollTrigger do GSAP -->
+    <script src="./script.js"></script> <!-- Arquivo JavaScript personalizado -->
 </body>
 </html>

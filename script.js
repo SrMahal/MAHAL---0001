@@ -19,6 +19,8 @@ const renderer = new THREE.WebGLRenderer({
     antialias: true,
     alpha: true,
 });
+
+
 renderer.setClearColor(0xffffff, 1);
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
