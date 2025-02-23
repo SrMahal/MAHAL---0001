@@ -50,10 +50,11 @@ p   {
 
 .model  {
     .model {
+        height: 100dvh; /* Usa a altura dinâmica da viewport */
+        width: 100vw;
         position: fixed;
         top: 0;
-        bottom: 0;
-        width: 100%;
+        left: 0;
         background: #fefdfd;
     }
    /*
