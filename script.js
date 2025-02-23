@@ -128,6 +128,7 @@ function playInitialAnimation() {
     });
 }
 
+
 ScrollTrigger.create({
     trigger: "body",
     start: "top top",
@@ -140,6 +141,14 @@ ScrollTrigger.create({
                 z: 1.8,
                 duration: 1,
                 ease: "power2.out",
+            });
+
+            // esconder PERFIL
+            gsap.to(".perfil", {
+                opacity: 0, // Torna invisível
+                scale: 0, // Reduz a escala para 0
+                duration: 0.5, // Duração da animação
+                ease: "power2.in", // Efeito de easing
             });
             isFloating = true;
         }
@@ -183,6 +192,14 @@ ScrollTrigger.create({
                                 duration: 0.5,
                                 ease: "power2.in",
                             });
+                            setTimeout(()=>{
+                                gsap.to(".perfil",{
+                                    opacity: 1, // Torna visível
+                                    scale: 1, // Aumenta a escala
+                                    duration: 0.5, // Duração da animação
+                                    ease: "power2.out", // Efeito de easing
+                                });
+                            }, 600); //Delay de 1 segundo
                         },
                     });
                 },
