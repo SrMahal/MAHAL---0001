@@ -7,7 +7,8 @@
 
 html, 
 body    {
-    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    height: 500vh;
     overflow-x: hidden;
 }
 
@@ -48,11 +49,19 @@ p   {
 }*/
 
 .model  {
+    .model {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background: #fefdfd;
+    }
+   /*
     position: fixed;
     width: 100%;
-    /*height: 100vh;*/
-    height: calc(var(--vh, 1vh) * 100);
-    background: #fefdfd;
+    height: 100vh;
+    height: 100vh;
+    background: #fefdfd;*/
 }
 
 section {
@@ -310,7 +319,7 @@ p{
     cursor: pointer;
     position: relative;
 }
-.buttoncall:hover{
+.buttoncall:houver{
     background-color: aqua;
 }
 
