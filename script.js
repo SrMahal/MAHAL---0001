@@ -5,6 +5,14 @@ gsap.ticker.add((time) => {
 });
 gsap.ticker.lagSmoothing(0);
 
+function setHeight() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+window.addEventListener('resize', setHeight);
+window.addEventListener('load', setHeight);
+
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xfefdfd);
 
