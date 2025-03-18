@@ -9,7 +9,7 @@
 /* Configurações do HTML e Body */
 html, body {
     width: 100vw; /* Largura igual à largura da viewport */
-    height: 500lvh; /* Altura igual a 500% da altura da viewport (página longa) */
+    height: 500svh; /* Altura igual a 500% da altura da viewport (página longa) */
     overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
 }
 
@@ -60,9 +60,9 @@ p {
     height: 120lvh; /* Usa a altura dinâmica da viewport */
     width: 100vw; /* Largura igual à largura da viewport */
     position: fixed; /* Fixa o contêiner na tela */
-    top: 0; /* Posiciona no topo */
+    top: -10px; /* Posiciona no topo */
     left: 0; /* Posiciona à esquerda */
-    background: #000000; /* Cor de fundo */
+    background: #d7d7d7; /* Cor de fundo */
 }
 
 /* Estilos para as seções */
