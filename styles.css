@@ -57,7 +57,7 @@ p {
 
 /* Estilos para o contêiner do modelo 3D */
 .model {
-    height: 100dvh; /* Usa a altura dinâmica da viewport */
+    height: 100lvh; /* Usa a altura dinâmica da viewport */
     width: 100vw; /* Largura igual à largura da viewport */
     position: fixed; /* Fixa o contêiner na tela */
     top: 0; /* Posiciona no topo */
