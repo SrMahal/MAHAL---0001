@@ -57,12 +57,12 @@ p {
 
 /* Estilos para o contêiner do modelo 3D */
 .model {
-    height: 100lvh; /* Usa a altura dinâmica da viewport */
+    height: 120lvh; /* Usa a altura dinâmica da viewport */
     width: 100vw; /* Largura igual à largura da viewport */
     position: fixed; /* Fixa o contêiner na tela */
     top: 0; /* Posiciona no topo */
     left: 0; /* Posiciona à esquerda */
-    background: #fefdfd; /* Cor de fundo */
+    background: #000000; /* Cor de fundo */
 }
 
 /* Estilos para as seções */
