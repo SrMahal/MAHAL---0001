@@ -9,7 +9,7 @@
 /* Configurações do HTML e Body */
 html, body {
     width: 100vw; /* Largura igual à largura da viewport */
-    height: 500vh; /* Altura igual a 500% da altura da viewport (página longa) */
+    height: 500lvh; /* Altura igual a 500% da altura da viewport (página longa) */
     overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
 }
 
